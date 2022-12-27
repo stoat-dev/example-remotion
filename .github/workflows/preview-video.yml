@@ -11,15 +11,15 @@ jobs:
     name: Render video
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@main
-      - uses: actions/setup-node@main
+      - uses: actions/checkout@v3
+      - uses: actions/setup-node@v3
+        with:
+          node-version: '16'
+          cache: npm
       - run: sudo apt update
       - run: sudo apt install ffmpeg
       - run: npm i
-      - run: echo $WORKFLOW_INPUT > input-props.json
-        env:
-          WORKFLOW_INPUT: ${{ toJson(github.event.inputs) }}
-      - run: npm run build -- --props="./input-props.json"
+      - run: npm run build
       - name: Run Stoat Action
         uses: stoat-dev/stoat-action@v0
         if: always()
