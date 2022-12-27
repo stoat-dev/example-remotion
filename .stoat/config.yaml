@@ -9,3 +9,7 @@ plugins:
       metadata:
         name: "Video Preview"
       path: out/video.mp4
+    gif_preview:
+      metadata:
+        name: "GIF Preview"
+      path: out/video.gif
