@@ -7,9 +7,9 @@ plugins:
   static_hosting:
     video_preview:
       metadata:
-        name: "Video Preview"
+        name: "Video"
       path: out/video.mp4
     gif_preview:
       metadata:
-        name: "GIF Preview"
+        name: "GIF"
       path: out/video.gif
