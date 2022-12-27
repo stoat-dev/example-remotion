@@ -22,7 +22,7 @@ jobs:
       - name: Generate video
         run: npm run build
       - name: Generate gif
-        run: ffmpeg -i out/video.mp4 -t 10 -pix_fmt rgb24 out/video.gif
+        run: ffmpeg -i out/video.mp4 -vf "fps=10,scale=640:-1" -pix_fmt rgb24 out/video.gif
       - name: Run Stoat Action
         uses: stoat-dev/stoat-action@v0
         if: always()
