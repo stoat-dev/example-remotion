@@ -1,6 +1,6 @@
 # Remotion with Stoat Video Preview
 
-This is a fork of the [`remotion-dev/template-helloworld`](https://github.com/remotion-dev/template-helloworld) repo to demo how to use Stoat to preview your Remotion video.
+This is a fork of the [`remotion-dev/template-helloworld`](https://github.com/remotion-dev/template-helloworld) repo to demo how to use Stoat to preview your Remotion video. Also see [this tutorial](https://docs.stoat.dev/docs/tutorials/preview-remotion) for details.
 
 1. Install the [Stoat App](https://github.com/apps/stoat-app) for the repo.
 2. Create a GitHub workflow for preview. An example can be found in [`.github/workflows/preview-video.yml`](.github/workflows/preview-video.yml).
