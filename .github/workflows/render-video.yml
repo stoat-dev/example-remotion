@@ -28,3 +28,6 @@ jobs:
         with:
           name: out.mp4
           path: out/video.mp4
+      - name: Run Stoat Action
+        uses: stoat-dev/stoat-action@v0
+        if: always()
